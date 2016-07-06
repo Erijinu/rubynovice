@@ -44,10 +44,11 @@ class Rubynovice
   end
 
   def ex3_5
-    p a
+    srand(0)
+    p a = rand()
     num=[]
     10.times{
-      b=(a*10).to_i
+      p b=(a*10).to_i
       num << b
       a=a*10-b
     }
@@ -58,7 +59,6 @@ class Rubynovice
       answer=answer*10+num[j]
       j+=1
     }
-    printf("%d\n",answer)
-    
+    return answer    
   end
 end
