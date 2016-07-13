@@ -45,7 +45,7 @@ class Rubynovice
         ans=i*j
         printf("%3d",ans)
 
-#        text << "#{ans}"
+        #        text << "#{ans}"
         text << sprintf("%3d",ans)
 
       end
