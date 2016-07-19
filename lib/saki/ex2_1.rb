@@ -1,8 +1,8 @@
 class Rubynovice
   def ex2_1
-    text= ""
+    text = ""
     8.times do
-      puts  "I love Shunkun.\n"
+    text << "I love Shunkun.\n"  
     end
     return text
   end
@@ -10,12 +10,12 @@ class Rubynovice
   def ex2_2
     text = ""
     for i in 1..5 do
-    puts i
-    text << "#{i}\n"
+      puts i
+      text << "#{i}\n"
     end
     return text
   end
-    
+  
   def ex2_3
     text = ""
     i=10
@@ -24,9 +24,9 @@ class Rubynovice
       text << "#{i}\n"
       i=i-2
     end
-  return text
+    return text
   end
-    
+  
   def ex2_4
     text = ""
     for m in 1..3 do
@@ -37,14 +37,17 @@ class Rubynovice
     end
     return text
   end
-   
+  
   def ex2_5
+    text = ""
     for m in 1..9 do
       for n in 1..9 do
         printf("%3d",m*n)
+        text << sprintf("%3d",m*n)
       end
-      print("\n")
+      text << "\n"
     end
+    #text << "\n"
     return text
   end
   
@@ -67,3 +70,4 @@ class Rubynovice
   end
 
 end 
+

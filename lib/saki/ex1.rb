@@ -16,3 +16,4 @@ class Rubynovice
     printf("ans=%i\n",a)
     text = "ans=#{a}\n"
   end
+end
